@@ -1,0 +1,4 @@
+## RewriteRule ^(.*)$ post.php?id=$1 [NC, QSA]
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([^./]+)/?$ $1.php [L]
