@@ -33,14 +33,25 @@
 		</header>
 		<div class="ts container container-index">
             <div class="ts positive segment">
-                <div class="ts big header">歡迎使用 客家三民 2.0</div>
-                <p>
-                    為維護網路善良風氣，我們要求您使用 Facebook 登入進行匿名發言
-                    ，不過請您放心，我們不會公開身分，即便是管理階層也無法查詢您的個資。
-                    <br>
-                    登入後您可查詢您的歷史發文、審核狀態。
-                </p>
-                <button class="ts ts primary big button" onclick="OpenSnackbar()">使用 Facebook 登入</button>
+                <div class="ts stackable grid">
+                    <div class="eight wide column">
+                        <div class="ts big header">歡迎使用 客家三民 2.0</div>
+                        <p>
+                            為維護網路善良風氣，我們要求你使用 Facebook 登入進行匿名發言
+                            ，不過請你放心，我們不會公開身分，即便是管理階層也無法查詢你的個資。
+                            <br>
+                            登入後你可查詢你的歷史發文、審核狀態。
+                        </p>
+                        <button class="ts ts primary big button" onclick="OpenSnackbar()">使用 Facebook 登入</button>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="ts big header">閱讀我們的隱私政策</div>
+                        在使用我們的系統前，建議你先閱讀本站隱私權政策與免責條款，發生條款內問題，本站一概不負任何責任。<br>
+                        開始使用後即代表你同意本站條款。<br>
+                        <h5>閱讀<a class="primary" href="/policy.html">隱私權政策 &amp 免責條款</a></h5>
+                    </div>
+                </div>
+
                 <script>
                     function OpenSnackbar() {
                         ts('.snackbar').snackbar({
