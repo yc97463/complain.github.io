@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <title>客家三民 2.0 | 每日一客家，一年四季客好客滿，客家三民</title>
+      <!-- Tocas UI：CSS 與元件 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+      <link rel="stylesheet" href="/assets/style.css">
+      <!-- Tocas JS：模塊與 JavaScript 函式 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+
+
+    </head>
+    <body>
+        <div class="ts top fixed basic menu">
+            <div class="ts container">
+                <a class="item" href="/">客家三民</a>
+                <a class="item" href="/submit.html">客家專區</a>
+                <a class="item" href="/lists.html">客訴管理</a>
+                <a class="item active" href="/manage.html">客文審核</a>
+                <div class="right menu">
+                    <span class="item">您好，<img class="ts circular image" src="https://img.imych.one/me/images/YC.jpg?v=1.3.2" style="height:1em;margin:0 0.2em;"> 油成</span>
+                    <a class="item" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+		<header class="ts fluid padded heading slate" style="padding:70px;">
+			<div class="ts narrow container">
+				<h1 class="ts header">客家三民 2.0</h1>
+				<div class="ts huge sub header">
+				    維持網路秩序，你我有責。<br>
+				    每日一客家，一年四季客好客滿。
+				</div>
+			</div>
+		</header>
+		<div class="ts container container-index">
+			<div class="submit-section">
+				<h2>客文審核</h2>
+            </div>
+            <div id="first" class="ts top attached tabbed menu">
+                <a class="active item" data-tab="審核中">待審核</a>
+                <a class="item" data-tab="已通過">已通過</a>
+                <a class="item" data-tab="已駁回">已駁回</a>
+                <a class="item" data-tab="待發布">待發布</a>
+                <a class="item" data-tab="已發布">已發布</a>
+            </div>
+            <div data-tab="審核中" class="ts active bottom attached tab segment">
+                <div class="lists-section">
+                    <div class="ts warning top attached message" id="status">
+                        審核中
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="cogs icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    所以雄中和各校也變成學園艦的話好像很不錯<br>
+                                    可以隨時走訪各個國家，還有絕美的夜空和極光<br>
+                                    從赤帶把你熱到變肥宅的天氣，到極地那種走上甲板就快凍死的天氣<br>
+                                    只是粗估營運費用大概要好幾十億以上吧?<br>
+                                    說不定學費也會暴漲<br>
+                                    =
+                                </div>
+                                <div class="description">
+                                    <a onclick="OpenImagePreviewer()" class="ts link small image">
+                                        <img src="https://img.imych.one/me/images/YC.jpg?v=1.3.2">
+                                    </a>
+                                    <a onclick="OpenImagePreviewer()" class="ts link small image">
+                                        <img src="https://img.imych.one/me/images/bg2.jpg">
+                                    </a>
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 14 日 10:24 (1 小時前)
+                                </div>
+                                <div class="actions">
+                                    <div class="ts buttons">
+                                        <button class="ts active positive button">通過</button>
+                                        <div class="or" data-text="或"></div>
+                                        <button class="ts negative button">駁回</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function OpenImagePreviewer() {
+                            ts('#ImagePreview').modal("show");
+                        }
+                    </script>
+                    <div class="ts modals dimmer" id="ImagePreview">
+                        <dialog id="modal" class="ts basic modal" open>
+                            <i class="close icon"></i>
+                            <div class="content">
+                                <img class="ts fluid image" src="https://img.imych.one/me/images/YC.jpg?v=1.3.2">
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+
+                <div class="lists-section">
+                    <div class="ts active dimmer">
+                        <div class="ts text loader">更新狀態中</div>
+                    </div>
+                    <div class="ts warning top attached message" id="status">
+                        審核中
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="cogs icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    所以雄中和各校也變成學園艦的話好像很不錯<br>
+                                    可以隨時走訪各個國家，還有絕美的夜空和極光<br>
+                                    從赤帶把你熱到變肥宅的天氣，到極地那種走上甲板就快凍死的天氣<br>
+                                    只是粗估營運費用大概要好幾十億以上吧?<br>
+                                    說不定學費也會暴漲<br>
+                                    =
+                                </div>
+                                <div class="description">
+                                    <a onclick="OpenImagePreviewer()" class="ts link small image">
+                                        <img src="https://img.imych.one/me/images/YC.jpg?v=1.3.2">
+                                    </a>
+                                    <a onclick="OpenImagePreviewer()" class="ts link small image">
+                                        <img src="https://img.imych.one/me/images/bg2.jpg">
+                                    </a>
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 14 日 10:24 (1 小時前)
+                                </div>
+                                <div class="actions">
+                                    <div class="ts buttons">
+                                        <button class="ts active positive button">通過</button>
+                                        <div class="or" data-text="或"></div>
+                                        <button class="ts negative button">駁回</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function OpenImagePreviewer() {
+                            ts('#ImagePreview').modal("show");
+                        }
+                    </script>
+                    <div class="ts modals dimmer" id="ImagePreview">
+                        <dialog id="modal" class="ts basic modal" open>
+                            <i class="close icon"></i>
+                            <div class="content">
+                                <img class="ts fluid image" src="https://img.imych.one/me/images/YC.jpg?v=1.3.2">
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+
+                <div class="lists-section">
+                    <div class="ts warning top attached message" id="status">
+                        審核中
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="cogs icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    其實我也不是一開始就喜歡咲夜的。<br>
+                                    還記得那天下著小雨，我喝醉了，搖搖晃晃地走進一戶人家的家裡，說道：「婆咲夜的全部給我出來！」<br>
+                                    看見我一副只想鬧事的樣子，主人非但沒有趕我走，只是點了點頭，就回去房間，不久後，他拿出他的手機給我看，他居然就是每篇文都婆咲夜的人。<br>
+                                    「搞什麼？」我揪住他的衣領「你在跟我開玩笑嗎？」<br>
+                                    「先別急。」主人神色自若「你先用心看了再說。」<br>
+                                    我心想，每篇文都咲夜是能讓我多開心？沒看過我發飆是不是？老子瘋狗的外號十年就有了<br>
+                                    我拿起手機，脫下我那副沈重的眼鏡，仔細看了看。<br>
+                                    驚為天人<br>
+                                    咲夜的純銀色、質感俐落留著雙股辮的短髮，以及那雙戲謔、如同侍衛將要殺死闖入者，給罪犯最後的憐憫的眼神，同時在我的眼球中閃爍，彷彿亙古的時辰，三者各自有不同的呈現，卻又互不衝突，像是在我眼裡重複演奏著美妙的月時計。<br>
+                                    回過神來時，想起我走進人家家裡時打算做的、想起我所經歷的，各種情緒匯聚成豆大的淚滴，落在了手機上，發出清脆的聲響，我下定決心重新做人。<br>
+                                    主人見狀，沒多說什麼，只露出了一抹欣慰的微笑，便回到了房間。<br>
+                                    多年之後，我成為了聞名全球、推廣咲夜的專業人士，我也沒忘記那位救了我一命的主人，只是當我四處打聽那戶人家的下落，卻發現那裡從來都沒有房子的痕跡，或許那天是PAD精靈拯救了我。<br>
+                                    推廣咲夜這條路不好走，但我相信只要越多人走，這條路一定會被我們越踩越平，我也相信冥冥之中，PAD精靈也持續守護著我。<br>
+                                    註：PAD精靈認為推廣咲夜能使PAD大賣，藉此壯大自身族群數量，畢竟每個人也想要有符合自己期望的胸部，因為如此才拯救了這位主角，讓他能真正的看到咲夜存在<br>
+                                    而那位主角，就是我<br>
+                                    =                            
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 13 日 23:01 (12 小時前)
+                                </div>    
+                                <div class="actions">
+                                    <div class="ts buttons">
+                                        <button class="ts positive button">通過</button>
+                                        <div class="or" data-text="或"></div>
+                                        <button class="ts active negative button">駁回</button>
+                                    </div>
+                                    <div class="ts labeled action input">
+                                        <input type="text" placeholder="輸入原因，或使用快速詞彙">
+                                        <select class="ts basic dropdown">
+                                            <option>色情</option>
+                                            <option>氾濫</option>
+                                            <option>我爽</option>
+                                        </select>
+                                        <button class="ts negative button">送出</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+            <div data-tab="已通過" class="ts active bottom attached tab segment">
+                <div class="lists-section">
+                    <div class="ts positive top attached message" id="status">
+                        認可通過
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="checkmark icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    #紅樓康普爛65009<br>
+                                    #偷<br>
+                                    我有一個很好的朋友 我們從國小一路同班 都還蠻有話聊的 感情好到幾乎可以算是勾肩搭背的等級 最後都考進了雄中 不過不同班 她以前長相並不出眾 就是個綁著高馬尾 帶著眼鏡的乖乖好學生 但是升高中的暑假 整個人蛻變超多 眼鏡拿掉了 頭髮放下來 搖身一變成大正妹 她本來就是潛力股 身材又好（168公分 皮膚白 學會化妝後等級從PR60晉升到PR95 正妹一進學校自然備受學長寵愛 不過也或許是因為長的太正 感覺上好像一直都有花花草草在旁邊 但其實到了高三卻一個男朋友也沒有 而我呢 也成為最接近她的男生 或許也因為這樣我也一直沒交女朋友 所以只能跟她一起逛街 吃飯什麼的 然後又因為這樣更沒女朋友的可能了 一直惡性循環下去 當然也可能只是我長的太醜 不過呢 故事就發生在高三那年 那年我因為老家在屏東 已經搬出來住了 她跟著同班同學住在出租公寓 某天我被同組報告的人雷到 辦事不力還愛牽拖 還跑去跟井智打小報告 整個超賭爛 一氣之下晚上回家運動 繞著社區跑了20公里發洩 回到家累爆 洗了個澡 正想點開setting 犒賞自己一下 結果褲子脫到一半 她就打電話來了 我心不甘情不願的接起電話 「喂？幹嘛？」 話筒那邊隱約傳來啜泣聲 我當時心想 幹 一定不是什麼好事 迫於無奈還是得問一下發生什麼事 不然兩個人都不講話隔著話筒尷尬那個場景一定很智障 不問還好 一問她整個崩潰 開始大哭 大概哭了十分鐘有吧 一直叫我過去找她 然後直接掛斷了電話 沒錯 直接掛斷了電話 WTF?......... 
+                                    我看了看時間 已經1:30了 我也洗完澡了 隔天還有行善銷過 而且重點是妳不告訴我妳在哪我他媽上哪找人阿崩潰！！！！！ 本來想說不想去的 直接放她去死 可是後來想一想 幹 她如果真的去死怎麼辦？ 馬的如果變成厲鬼晚上回來找我說是我害她死掉的 以後我都不敢洗澡了 想到這邊我打了一個寒顫 還是拿了鑰匙騎車出門找人 我直覺的騎到了愛河旁 我們以前心情不好的時候常來這裡吃宵夜 所以我想她應該在這裡 果然在一個長椅上發現一個喝醉酒的女子 旁邊散落著啤酒罐 怎麼沒有人來把她撿走 真是可惜 醉倒的正妹可不是每天有 我嘆了口氣 拍了拍她的臉 把她扶起來 拿了衛生紙擦了擦她的臉 把旁邊的啤酒罐收拾一下 But 現在問題來了 我要怎麼送她回去？ 按照她醉的這種程度 把她放在後座 我騎車騎一騎她可能會直接不見 至於放在前座嘛⋯⋯ 就算168的大長腿塞的進前座 環抱式騎法只會讓我倆死的更快 如果揹著她走回去學校呢？ 看起來好像很爛漫 但這不是演韓劇 一想到要揹著這隻豬走兩公里回去 我寧願選擇死亡 這時我看到附近有一家汽旅 突然之間我有個大膽的想法 褲子瞬間膨脹了起來 不過精蟲衝腦後換來的是冷靜與理性 想了想 幹 算了吧 這種好康不是屬於我的 不要讓事情變的剪不斷理還亂 看來似乎只能叫計程車了 這時候她醒了過來 看到我在旁邊 又開始爆哭 支支吾吾的講了一些話 反正大概就是她喜歡一個學長然後學長也喜歡她然後她本來今天要跟學長告白的結果卻發現學長跟另一個學妹上床這種狗屎爛劇情 講完之後我都來不及插嘴 她開始賞我巴掌 啪！啪！啪！ 我大叫：「幹嘛打我啦？我又不是學長！」 她說：「我心情不好讓我打一下會死喔？」 我就說：「幹妳心情不好乾我屁事，我心情也不好啊！」 她就說：「那你也可以打回來啊！」 第一次看到她發酒瘋 到底是喝到什麼程度 我連忙哄她 但她不領情 一直瘋狂打我 接著 打了一個酒嗝 然後又是一個嗝 再一個嗝 我驚覺不妙 正要逃離時 下一秒 嘩啦嘩啦嘩啦嘩啦 她吐在我的外套上 她吐在我的外套上 她吐在我的外套上 我都還沒反應過來 接著又是 嘩啦嘩啦嘩啦 「幹你在衝三.... 嘩啦嘩啦嘩啦嘩啦 平息之後 她對我笑了一下 我以為已經結束了 嘩啦嘩啦嘩啦嘩啦 然後就又醉倒了 馬的我想走人了 
+                                    我對她大吼 「幹 你幹嘛吐在我身上？」 「嗯.......？$@！@%&@」 事實是 你根本無法跟喝醉酒的生物講話 那一瞬間真的很想把她載去夜店丟掉 但我還是捂著臉 捧著穢物外套 走到路邊叫酒後代駕 還特別說剛剛有嘔吐過 麻煩司機鋪上塑膠墊 後來計程車來了 半哄半騙 把她塞進車裡 她倒在我腿上 我把我的外套包好 裝進塑膠袋裡綁起來 這是一件我上個月剛買 我非常喜歡 6000多塊的EiDER外套 我看著這個女人 除了無奈還是無奈 八年的友誼 很想在今日就給它劃下句點 拿了衛生紙擦擦她嘴邊殘存的穢物 司機看了一眼，說 「少年欸，對女朋友不錯欸，現在這種男生不多了啦」 我苦笑了一下 呵呵 呵呵呵 呵呵呵呵 我也懶的解釋了 我看著窗外 夜風吹來涼涼的 天空是黑色的 我的心情卻是藍色的 藍的不能再藍 在校門口下車 揹著這隻豬走進學校 好不容易走到公寓門口 我滿身臭氣 實在不是很想去叫警衛來開門 但我又沒她室友的聯絡方式 於是聰明如我 把她放了下來 拿起她的手機 放到面前 用手把她的眼睛撐開 解鎖face id 
+                                    幹還真的被我解開了 傳賴給她室友 好險還沒有睡 簡單敘述一下 她室友下樓帶她上去 看著她室友一臉嫌惡的臉 我意識到我自己真的很臭 聞了一下 幹 真的很臭 上天是公平的 穢物也是公平的 因為全部都在我身上 正妹的身上是不能有任何臭味的 回到家收拾了一下 已經快四點了 想當然爾 八點行善銷過我自然沒去上 快中午時 電話又響了起來 「喂？幹嘛？」 「欸 老朋友！ 是我啦哈哈 昨天謝啦 我室友都跟我說了 是你送我回來的」 「嗯....」 「欸欸晚上再續攤啊，請你喝個酒答謝順便慶祝一下我擺脫渣男學長啊啊啊」 「........」 「幹嘛，不要喔？」 「你去吃屎吧」 然後我就掛斷電話了 繼續倒頭就睡 八年的友誼到此結束 不過大概絕交一個禮拜後 我們繼續了第九年的友情 一直到今天 那為什麼今天會突然有感而發呢 因為現在我在她的婚禮現場 放心 新郎不是我 這不是狄卡情節 不過剛剛新郎來跟我聊天 我們剛好聊到酒品問題 ：「是說我從來沒看過她喝酒欸，跟她相處兩年也不知道她酒品如何？」 我笑而不語 ：「你跟她從國中就認識了，那你知道嗎？」 不知道為什麼 我突然有種惡作劇的心情 我：「她酒品還行啦，酒量普通，不過喝醉也只會睡著而已，是說你們晚上可以去喝酒慶祝新婚啊！」 ：「哈哈好主意，我知道了」 說完 新郎開心的走了 我望著他的背影 心裡卻一點愧疚感也沒有 我淡淡的笑著 對不起新郎 倒霉鬼不能只有我一個 人在婚後一定會遇到許多問題 這是你要面對的第一個問題 早期發現 早期治療 俗話說 洞房花燭夜 人生四大樂事之一 不過今晚 我的心與新郎同在
+                                    R.I.P 新郎
+                                    =
+                                    =
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 13 日 21:32 (14 小時前)
+                                </div>    
+                            </div>
+                        </div>
+                    </div>    
+                </div>  
+
+                <div class="lists-section">
+                    <div class="ts positive top attached message" id="status">
+                        認可通過
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="checkmark icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    韓市長利用休息時間在車上小睡片刻，如此做牛做馬任勞任怨的偉人，還要面對不理性群眾的冷嘲熱諷、酸言酸語，這個社會怎麼了？<br>
+                                    =
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 13 日 20:32 (15 小時前)
+                                </div>    
+                            </div>
+                        </div>
+                    </div>    
+                </div>  
+                
+                <div class="lists-section">
+                    <div class="ts positive top attached message" id="status">
+                        認可通過
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="checkmark icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    人與人邂逅的引力就像是「重力」！<br>
+                                    為了相遇而相遇，更是無法擺脫的宿命！<br>
+                                    所以人類要體驗過未來的一切，才能到達這個世界！<br>
+                                    人與人何時相遇，何時別離…戰爭何時發生，時代何時變遷…自己會喜歡上誰？又會恨誰？自己何時會生小孩？小孩何時又會長大成人？誰會犯罪？誰又發明或創造了藝術？<br>
+                                    這些都不是用頭腦或肉體去記憶，而是用精神去體驗 過後所得到的認知！那就是「幸福」的真諦！不單單只有一人，而是全體人類都能對未來有所「覺悟」！<br>
+                                    「覺悟者恒幸福」！或許你會認為預知壞的未來會讓人感到「絕望」，其實剛好相反！<br>
+                                    即使知道明天會「死』，心中早有覺悟就不怕死！<br>
+                                    「覺悟」會吹走一切「絕望」！人類也會因此而改變！<br>
+                                    這正是我所追求的！人人都能籍由「通往天國的階梯」到達真幸福的境界！<br>
+                                    =                                
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 13 日 19:32 (16 小時前)
+                                </div>    
+                            </div>
+                        </div>
+                    </div>    
+                </div>  
+            </div>
+            
+            <div data-tab="已駁回" class="ts active bottom attached tab segment">
+                <div class="lists-section">
+                    <div class="ts negative top attached message" id="status">
+                        下架駁回
+                    </div>
+                    <div class="attached">
+                        <div class="ts structured message" id="message">
+                            <div class="icon">
+                                <i class="remove icon"></i>
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    Sleep, good boy, my beautiful boy.<br>
+                                    Good night, sleep tight.<br>
+                                    Quietly the moon is looking<br>
+                                    Into your cradle<br>
+                                    I will tell fairy tales<br>
+                                    Find sing you little songs, but you must slumber, with your little eyes closed.<br>
+                                    Good night, sleep tight.<br>
+                                    You will look like a hero and be a Cossack deep in your heart.<br>
+                                    I will accompany you and watch you go, you will just wave your hand.How many secret bitter tears<br>
+                                    Will I shed that night!<br>
+                                    Sleep my angel, calmly, sweetly, Good night, sleep tight.<br>
+                                    I will die from yearning, Inconsolably waiting, I'll pray the whole day long, and at night I'll wonder, I'll think that you're in trouble<br>
+                                    Far away in a strange land. Sleep now, as long as you know no sorrows, Good night sleep tight.<br>
+                                    On the road, I'll give you a small holy icon, and when you pray to god, you'll put it right in front of you.<br>
+                                    While preparing for the dangerous battle, please remember your mother.<br>
+                                    Sleep, good boy, my beautiful boy<br>
+                                    Good night, sleep tight.<br>
+                                    =
+                                </div>
+                                <div class="actions">
+                                    投稿時間：2020年 03 月 13 日 20:19 (15 小時前)
+                                </div>    
+                                <div class="actions">
+                                    駁回原因：我們已接獲版權警告並將此影片進行消音處理，這可能導致你的影片觀看次數下降。<span class="ts basic negative label">版權</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+    
+            </div>
+
+            <div data-tab="待發布" class="ts active bottom attached tab segment">
+                <div class="release-section">
+                    <button class="ts positive labeled icon button">
+                        <i class="send icon"></i>
+                        全部立即發布
+                    </button>
+    
+                    <div class="lists-section">
+                        <div class="ts info top attached message" id="status">
+                            待發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="cogs icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        #客家三民20<br>
+                                        <br>
+                                        #紅樓康普爛65009<br>
+                                        #偷<br>
+                                        我有一個很好的朋友 我們從國小一路同班 都還蠻有話聊的 感情好到幾乎可以算是勾肩搭背的等級 最後都考進了雄中 不過不同班 她以前長相並不出眾 就是個綁著高馬尾 帶著眼鏡的乖乖好學生 但是升高中的暑假 整個人蛻變超多 眼鏡拿掉了 頭髮放下來 搖身一變成大正妹 她本來就是潛力股 身材又好（168公分 皮膚白 學會化妝後等級從PR60晉升到PR95 正妹一進學校自然備受學長寵愛 不過也或許是因為長的太正 感覺上好像一直都有花花草草在旁邊 但其實到了高三卻一個男朋友也沒有 而我呢 也成為最接近她的男生 或許也因為這樣我也一直沒交女朋友 所以只能跟她一起逛街 吃飯什麼的 然後又因為這樣更沒女朋友的可能了 一直惡性循環下去 當然也可能只是我長的太醜 不過呢 故事就發生在高三那年 那年我因為老家在屏東 已經搬出來住了 她跟著同班同學住在出租公寓 某天我被同組報告的人雷到 辦事不力還愛牽拖 還跑去跟井智打小報告 整個超賭爛 一氣之下晚上回家運動 繞著社區跑了20公里發洩 回到家累爆 洗了個澡 正想點開setting 犒賞自己一下 結果褲子脫到一半 她就打電話來了 我心不甘情不願的接起電話 「喂？幹嘛？」 話筒那邊隱約傳來啜泣聲 我當時心想 幹 一定不是什麼好事 迫於無奈還是得問一下發生什麼事 不然兩個人都不講話隔著話筒尷尬那個場景一定很智障 不問還好 一問她整個崩潰 開始大哭 大概哭了十分鐘有吧 一直叫我過去找她 然後直接掛斷了電話 沒錯 直接掛斷了電話 WTF?......... 
+                                        我看了看時間 已經1:30了 我也洗完澡了 隔天還有行善銷過 而且重點是妳不告訴我妳在哪我他媽上哪找人阿崩潰！！！！！ 本來想說不想去的 直接放她去死 可是後來想一想 幹 她如果真的去死怎麼辦？ 馬的如果變成厲鬼晚上回來找我說是我害她死掉的 以後我都不敢洗澡了 想到這邊我打了一個寒顫 還是拿了鑰匙騎車出門找人 我直覺的騎到了愛河旁 我們以前心情不好的時候常來這裡吃宵夜 所以我想她應該在這裡 果然在一個長椅上發現一個喝醉酒的女子 旁邊散落著啤酒罐 怎麼沒有人來把她撿走 真是可惜 醉倒的正妹可不是每天有 我嘆了口氣 拍了拍她的臉 把她扶起來 拿了衛生紙擦了擦她的臉 把旁邊的啤酒罐收拾一下 But 現在問題來了 我要怎麼送她回去？ 按照她醉的這種程度 把她放在後座 我騎車騎一騎她可能會直接不見 至於放在前座嘛⋯⋯ 就算168的大長腿塞的進前座 環抱式騎法只會讓我倆死的更快 如果揹著她走回去學校呢？ 看起來好像很爛漫 但這不是演韓劇 一想到要揹著這隻豬走兩公里回去 我寧願選擇死亡 這時我看到附近有一家汽旅 突然之間我有個大膽的想法 褲子瞬間膨脹了起來 不過精蟲衝腦後換來的是冷靜與理性 想了想 幹 算了吧 這種好康不是屬於我的 不要讓事情變的剪不斷理還亂 看來似乎只能叫計程車了 這時候她醒了過來 看到我在旁邊 又開始爆哭 支支吾吾的講了一些話 反正大概就是她喜歡一個學長然後學長也喜歡她然後她本來今天要跟學長告白的結果卻發現學長跟另一個學妹上床這種狗屎爛劇情 講完之後我都來不及插嘴 她開始賞我巴掌 啪！啪！啪！ 我大叫：「幹嘛打我啦？我又不是學長！」 她說：「我心情不好讓我打一下會死喔？」 我就說：「幹妳心情不好乾我屁事，我心情也不好啊！」 她就說：「那你也可以打回來啊！」 第一次看到她發酒瘋 到底是喝到什麼程度 我連忙哄她 但她不領情 一直瘋狂打我 接著 打了一個酒嗝 然後又是一個嗝 再一個嗝 我驚覺不妙 正要逃離時 下一秒 嘩啦嘩啦嘩啦嘩啦 她吐在我的外套上 她吐在我的外套上 她吐在我的外套上 我都還沒反應過來 接著又是 嘩啦嘩啦嘩啦 「幹你在衝三.... 嘩啦嘩啦嘩啦嘩啦 平息之後 她對我笑了一下 我以為已經結束了 嘩啦嘩啦嘩啦嘩啦 然後就又醉倒了 馬的我想走人了 
+                                        我對她大吼 「幹 你幹嘛吐在我身上？」 「嗯.......？$@！@%&@」 事實是 你根本無法跟喝醉酒的生物講話 那一瞬間真的很想把她載去夜店丟掉 但我還是捂著臉 捧著穢物外套 走到路邊叫酒後代駕 還特別說剛剛有嘔吐過 麻煩司機鋪上塑膠墊 後來計程車來了 半哄半騙 把她塞進車裡 她倒在我腿上 我把我的外套包好 裝進塑膠袋裡綁起來 這是一件我上個月剛買 我非常喜歡 6000多塊的EiDER外套 我看著這個女人 除了無奈還是無奈 八年的友誼 很想在今日就給它劃下句點 拿了衛生紙擦擦她嘴邊殘存的穢物 司機看了一眼，說 「少年欸，對女朋友不錯欸，現在這種男生不多了啦」 我苦笑了一下 呵呵 呵呵呵 呵呵呵呵 我也懶的解釋了 我看著窗外 夜風吹來涼涼的 天空是黑色的 我的心情卻是藍色的 藍的不能再藍 在校門口下車 揹著這隻豬走進學校 好不容易走到公寓門口 我滿身臭氣 實在不是很想去叫警衛來開門 但我又沒她室友的聯絡方式 於是聰明如我 把她放了下來 拿起她的手機 放到面前 用手把她的眼睛撐開 解鎖face id 
+                                        幹還真的被我解開了 傳賴給她室友 好險還沒有睡 簡單敘述一下 她室友下樓帶她上去 看著她室友一臉嫌惡的臉 我意識到我自己真的很臭 聞了一下 幹 真的很臭 上天是公平的 穢物也是公平的 因為全部都在我身上 正妹的身上是不能有任何臭味的 回到家收拾了一下 已經快四點了 想當然爾 八點行善銷過我自然沒去上 快中午時 電話又響了起來 「喂？幹嘛？」 「欸 老朋友！ 是我啦哈哈 昨天謝啦 我室友都跟我說了 是你送我回來的」 「嗯....」 「欸欸晚上再續攤啊，請你喝個酒答謝順便慶祝一下我擺脫渣男學長啊啊啊」 「........」 「幹嘛，不要喔？」 「你去吃屎吧」 然後我就掛斷電話了 繼續倒頭就睡 八年的友誼到此結束 不過大概絕交一個禮拜後 我們繼續了第九年的友情 一直到今天 那為什麼今天會突然有感而發呢 因為現在我在她的婚禮現場 放心 新郎不是我 這不是狄卡情節 不過剛剛新郎來跟我聊天 我們剛好聊到酒品問題 ：「是說我從來沒看過她喝酒欸，跟她相處兩年也不知道她酒品如何？」 我笑而不語 ：「你跟她從國中就認識了，那你知道嗎？」 不知道為什麼 我突然有種惡作劇的心情 我：「她酒品還行啦，酒量普通，不過喝醉也只會睡著而已，是說你們晚上可以去喝酒慶祝新婚啊！」 ：「哈哈好主意，我知道了」 說完 新郎開心的走了 我望著他的背影 心裡卻一點愧疚感也沒有 我淡淡的笑著 對不起新郎 倒霉鬼不能只有我一個 人在婚後一定會遇到許多問題 這是你要面對的第一個問題 早期發現 早期治療 俗話說 洞房花燭夜 人生四大樂事之一 不過今晚 我的心與新郎同在
+                                        R.I.P 新郎
+                                        =
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 21:32 (14 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+    
+                    <div class="lists-section">
+                        <div class="ts info top attached message" id="status">
+                            待發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="cogs icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        韓市長利用休息時間在車上小睡片刻，如此做牛做馬任勞任怨的偉人，還要面對不理性群眾的冷嘲熱諷、酸言酸語，這個社會怎麼了？<br>
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 20:32 (15 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+                    
+                    <div class="lists-section">
+                        <div class="ts info top attached message" id="status">
+                            待發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="cogs icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        人與人邂逅的引力就像是「重力」！<br>
+                                        為了相遇而相遇，更是無法擺脫的宿命！<br>
+                                        所以人類要體驗過未來的一切，才能到達這個世界！<br>
+                                        人與人何時相遇，何時別離…戰爭何時發生，時代何時變遷…自己會喜歡上誰？又會恨誰？自己何時會生小孩？小孩何時又會長大成人？誰會犯罪？誰又發明或創造了藝術？<br>
+                                        這些都不是用頭腦或肉體去記憶，而是用精神去體驗 過後所得到的認知！那就是「幸福」的真諦！不單單只有一人，而是全體人類都能對未來有所「覺悟」！<br>
+                                        「覺悟者恒幸福」！或許你會認為預知壞的未來會讓人感到「絕望」，其實剛好相反！<br>
+                                        即使知道明天會「死』，心中早有覺悟就不怕死！<br>
+                                        「覺悟」會吹走一切「絕望」！人類也會因此而改變！<br>
+                                        這正是我所追求的！人人都能籍由「通往天國的階梯」到達真幸福的境界！<br>
+                                        =                                
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 19:32 (16 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>      
+                </div>
+                <div class="release-section">
+                    <div class="ts active dimmer">
+                        <div class="ts text loader">
+                            正在發布中
+                            <div class="ts active progress">
+                                <div class="bar" style="width: 60%">
+                                    <span class="text">68%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lists-section">
+                        <div class="ts info top attached message" id="status">
+                            待發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="cogs icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        #客家三民20<br>
+                                        <br>
+                                        #紅樓康普爛65009<br>
+                                        #偷<br>
+                                        我有一個很好的朋友 我們從國小一路同班 都還蠻有話聊的 感情好到幾乎可以算是勾肩搭背的等級 最後都考進了雄中 不過不同班 她以前長相並不出眾 就是個綁著高馬尾 帶著眼鏡的乖乖好學生 但是升高中的暑假 整個人蛻變超多 眼鏡拿掉了 頭髮放下來 搖身一變成大正妹 她本來就是潛力股 身材又好（168公分 皮膚白 學會化妝後等級從PR60晉升到PR95 正妹一進學校自然備受學長寵愛 不過也或許是因為長的太正 感覺上好像一直都有花花草草在旁邊 但其實到了高三卻一個男朋友也沒有 而我呢 也成為最接近她的男生 或許也因為這樣我也一直沒交女朋友 所以只能跟她一起逛街 吃飯什麼的 然後又因為這樣更沒女朋友的可能了 一直惡性循環下去 當然也可能只是我長的太醜 不過呢 故事就發生在高三那年 那年我因為老家在屏東 已經搬出來住了 她跟著同班同學住在出租公寓 某天我被同組報告的人雷到 辦事不力還愛牽拖 還跑去跟井智打小報告 整個超賭爛 一氣之下晚上回家運動 繞著社區跑了20公里發洩 回到家累爆 洗了個澡 正想點開setting 犒賞自己一下 結果褲子脫到一半 她就打電話來了 我心不甘情不願的接起電話 「喂？幹嘛？」 話筒那邊隱約傳來啜泣聲 我當時心想 幹 一定不是什麼好事 迫於無奈還是得問一下發生什麼事 不然兩個人都不講話隔著話筒尷尬那個場景一定很智障 不問還好 一問她整個崩潰 開始大哭 大概哭了十分鐘有吧 一直叫我過去找她 然後直接掛斷了電話 沒錯 直接掛斷了電話 WTF?......... 
+                                        我看了看時間 已經1:30了 我也洗完澡了 隔天還有行善銷過 而且重點是妳不告訴我妳在哪我他媽上哪找人阿崩潰！！！！！ 本來想說不想去的 直接放她去死 可是後來想一想 幹 她如果真的去死怎麼辦？ 馬的如果變成厲鬼晚上回來找我說是我害她死掉的 以後我都不敢洗澡了 想到這邊我打了一個寒顫 還是拿了鑰匙騎車出門找人 我直覺的騎到了愛河旁 我們以前心情不好的時候常來這裡吃宵夜 所以我想她應該在這裡 果然在一個長椅上發現一個喝醉酒的女子 旁邊散落著啤酒罐 怎麼沒有人來把她撿走 真是可惜 醉倒的正妹可不是每天有 我嘆了口氣 拍了拍她的臉 把她扶起來 拿了衛生紙擦了擦她的臉 把旁邊的啤酒罐收拾一下 But 現在問題來了 我要怎麼送她回去？ 按照她醉的這種程度 把她放在後座 我騎車騎一騎她可能會直接不見 至於放在前座嘛⋯⋯ 就算168的大長腿塞的進前座 環抱式騎法只會讓我倆死的更快 如果揹著她走回去學校呢？ 看起來好像很爛漫 但這不是演韓劇 一想到要揹著這隻豬走兩公里回去 我寧願選擇死亡 這時我看到附近有一家汽旅 突然之間我有個大膽的想法 褲子瞬間膨脹了起來 不過精蟲衝腦後換來的是冷靜與理性 想了想 幹 算了吧 這種好康不是屬於我的 不要讓事情變的剪不斷理還亂 看來似乎只能叫計程車了 這時候她醒了過來 看到我在旁邊 又開始爆哭 支支吾吾的講了一些話 反正大概就是她喜歡一個學長然後學長也喜歡她然後她本來今天要跟學長告白的結果卻發現學長跟另一個學妹上床這種狗屎爛劇情 講完之後我都來不及插嘴 她開始賞我巴掌 啪！啪！啪！ 我大叫：「幹嘛打我啦？我又不是學長！」 她說：「我心情不好讓我打一下會死喔？」 我就說：「幹妳心情不好乾我屁事，我心情也不好啊！」 她就說：「那你也可以打回來啊！」 第一次看到她發酒瘋 到底是喝到什麼程度 我連忙哄她 但她不領情 一直瘋狂打我 接著 打了一個酒嗝 然後又是一個嗝 再一個嗝 我驚覺不妙 正要逃離時 下一秒 嘩啦嘩啦嘩啦嘩啦 她吐在我的外套上 她吐在我的外套上 她吐在我的外套上 我都還沒反應過來 接著又是 嘩啦嘩啦嘩啦 「幹你在衝三.... 嘩啦嘩啦嘩啦嘩啦 平息之後 她對我笑了一下 我以為已經結束了 嘩啦嘩啦嘩啦嘩啦 然後就又醉倒了 馬的我想走人了 
+                                        我對她大吼 「幹 你幹嘛吐在我身上？」 「嗯.......？$@！@%&@」 事實是 你根本無法跟喝醉酒的生物講話 那一瞬間真的很想把她載去夜店丟掉 但我還是捂著臉 捧著穢物外套 走到路邊叫酒後代駕 還特別說剛剛有嘔吐過 麻煩司機鋪上塑膠墊 後來計程車來了 半哄半騙 把她塞進車裡 她倒在我腿上 我把我的外套包好 裝進塑膠袋裡綁起來 這是一件我上個月剛買 我非常喜歡 6000多塊的EiDER外套 我看著這個女人 除了無奈還是無奈 八年的友誼 很想在今日就給它劃下句點 拿了衛生紙擦擦她嘴邊殘存的穢物 司機看了一眼，說 「少年欸，對女朋友不錯欸，現在這種男生不多了啦」 我苦笑了一下 呵呵 呵呵呵 呵呵呵呵 我也懶的解釋了 我看著窗外 夜風吹來涼涼的 天空是黑色的 我的心情卻是藍色的 藍的不能再藍 在校門口下車 揹著這隻豬走進學校 好不容易走到公寓門口 我滿身臭氣 實在不是很想去叫警衛來開門 但我又沒她室友的聯絡方式 於是聰明如我 把她放了下來 拿起她的手機 放到面前 用手把她的眼睛撐開 解鎖face id 
+                                        幹還真的被我解開了 傳賴給她室友 好險還沒有睡 簡單敘述一下 她室友下樓帶她上去 看著她室友一臉嫌惡的臉 我意識到我自己真的很臭 聞了一下 幹 真的很臭 上天是公平的 穢物也是公平的 因為全部都在我身上 正妹的身上是不能有任何臭味的 回到家收拾了一下 已經快四點了 想當然爾 八點行善銷過我自然沒去上 快中午時 電話又響了起來 「喂？幹嘛？」 「欸 老朋友！ 是我啦哈哈 昨天謝啦 我室友都跟我說了 是你送我回來的」 「嗯....」 「欸欸晚上再續攤啊，請你喝個酒答謝順便慶祝一下我擺脫渣男學長啊啊啊」 「........」 「幹嘛，不要喔？」 「你去吃屎吧」 然後我就掛斷電話了 繼續倒頭就睡 八年的友誼到此結束 不過大概絕交一個禮拜後 我們繼續了第九年的友情 一直到今天 那為什麼今天會突然有感而發呢 因為現在我在她的婚禮現場 放心 新郎不是我 這不是狄卡情節 不過剛剛新郎來跟我聊天 我們剛好聊到酒品問題 ：「是說我從來沒看過她喝酒欸，跟她相處兩年也不知道她酒品如何？」 我笑而不語 ：「你跟她從國中就認識了，那你知道嗎？」 不知道為什麼 我突然有種惡作劇的心情 我：「她酒品還行啦，酒量普通，不過喝醉也只會睡著而已，是說你們晚上可以去喝酒慶祝新婚啊！」 ：「哈哈好主意，我知道了」 說完 新郎開心的走了 我望著他的背影 心裡卻一點愧疚感也沒有 我淡淡的笑著 對不起新郎 倒霉鬼不能只有我一個 人在婚後一定會遇到許多問題 這是你要面對的第一個問題 早期發現 早期治療 俗話說 洞房花燭夜 人生四大樂事之一 不過今晚 我的心與新郎同在
+                                        R.I.P 新郎
+                                        =
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 21:32 (14 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+    
+                    <div class="lists-section">
+                        <div class="ts warning top attached message" id="status">
+                            正在發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="cogs icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        韓市長利用休息時間在車上小睡片刻，如此做牛做馬任勞任怨的偉人，還要面對不理性群眾的冷嘲熱諷、酸言酸語，這個社會怎麼了？<br>
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 20:32 (15 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+                    
+                    <div class="lists-section">
+                        <div class="ts positive top attached message" id="status">
+                            已發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="checkmark icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        人與人邂逅的引力就像是「重力」！<br>
+                                        為了相遇而相遇，更是無法擺脫的宿命！<br>
+                                        所以人類要體驗過未來的一切，才能到達這個世界！<br>
+                                        人與人何時相遇，何時別離…戰爭何時發生，時代何時變遷…自己會喜歡上誰？又會恨誰？自己何時會生小孩？小孩何時又會長大成人？誰會犯罪？誰又發明或創造了藝術？<br>
+                                        這些都不是用頭腦或肉體去記憶，而是用精神去體驗 過後所得到的認知！那就是「幸福」的真諦！不單單只有一人，而是全體人類都能對未來有所「覺悟」！<br>
+                                        「覺悟者恒幸福」！或許你會認為預知壞的未來會讓人感到「絕望」，其實剛好相反！<br>
+                                        即使知道明天會「死』，心中早有覺悟就不怕死！<br>
+                                        「覺悟」會吹走一切「絕望」！人類也會因此而改變！<br>
+                                        這正是我所追求的！人人都能籍由「通往天國的階梯」到達真幸福的境界！<br>
+                                        =                                
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 19:32 (16 小時前)<br>
+                                        發布時間：2020年 03 月 14 日 19:32 (16 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>      
+                </div>
+            </div>
+
+            <div data-tab="已發布" class="ts active bottom attached tab segment">
+                <div class="released-section">
+                    <div class="lists-section">
+                        <div class="ts positive top attached message" id="status">
+                            已發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="checkmark icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        #客家三民20<br>
+                                        <br>
+                                        #紅樓康普爛65009<br>
+                                        #偷<br>
+                                        我有一個很好的朋友 我們從國小一路同班 都還蠻有話聊的 感情好到幾乎可以算是勾肩搭背的等級 最後都考進了雄中 不過不同班 她以前長相並不出眾 就是個綁著高馬尾 帶著眼鏡的乖乖好學生 但是升高中的暑假 整個人蛻變超多 眼鏡拿掉了 頭髮放下來 搖身一變成大正妹 她本來就是潛力股 身材又好（168公分 皮膚白 學會化妝後等級從PR60晉升到PR95 正妹一進學校自然備受學長寵愛 不過也或許是因為長的太正 感覺上好像一直都有花花草草在旁邊 但其實到了高三卻一個男朋友也沒有 而我呢 也成為最接近她的男生 或許也因為這樣我也一直沒交女朋友 所以只能跟她一起逛街 吃飯什麼的 然後又因為這樣更沒女朋友的可能了 一直惡性循環下去 當然也可能只是我長的太醜 不過呢 故事就發生在高三那年 那年我因為老家在屏東 已經搬出來住了 她跟著同班同學住在出租公寓 某天我被同組報告的人雷到 辦事不力還愛牽拖 還跑去跟井智打小報告 整個超賭爛 一氣之下晚上回家運動 繞著社區跑了20公里發洩 回到家累爆 洗了個澡 正想點開setting 犒賞自己一下 結果褲子脫到一半 她就打電話來了 我心不甘情不願的接起電話 「喂？幹嘛？」 話筒那邊隱約傳來啜泣聲 我當時心想 幹 一定不是什麼好事 迫於無奈還是得問一下發生什麼事 不然兩個人都不講話隔著話筒尷尬那個場景一定很智障 不問還好 一問她整個崩潰 開始大哭 大概哭了十分鐘有吧 一直叫我過去找她 然後直接掛斷了電話 沒錯 直接掛斷了電話 WTF?......... 
+                                        我看了看時間 已經1:30了 我也洗完澡了 隔天還有行善銷過 而且重點是妳不告訴我妳在哪我他媽上哪找人阿崩潰！！！！！ 本來想說不想去的 直接放她去死 可是後來想一想 幹 她如果真的去死怎麼辦？ 馬的如果變成厲鬼晚上回來找我說是我害她死掉的 以後我都不敢洗澡了 想到這邊我打了一個寒顫 還是拿了鑰匙騎車出門找人 我直覺的騎到了愛河旁 我們以前心情不好的時候常來這裡吃宵夜 所以我想她應該在這裡 果然在一個長椅上發現一個喝醉酒的女子 旁邊散落著啤酒罐 怎麼沒有人來把她撿走 真是可惜 醉倒的正妹可不是每天有 我嘆了口氣 拍了拍她的臉 把她扶起來 拿了衛生紙擦了擦她的臉 把旁邊的啤酒罐收拾一下 But 現在問題來了 我要怎麼送她回去？ 按照她醉的這種程度 把她放在後座 我騎車騎一騎她可能會直接不見 至於放在前座嘛⋯⋯ 就算168的大長腿塞的進前座 環抱式騎法只會讓我倆死的更快 如果揹著她走回去學校呢？ 看起來好像很爛漫 但這不是演韓劇 一想到要揹著這隻豬走兩公里回去 我寧願選擇死亡 這時我看到附近有一家汽旅 突然之間我有個大膽的想法 褲子瞬間膨脹了起來 不過精蟲衝腦後換來的是冷靜與理性 想了想 幹 算了吧 這種好康不是屬於我的 不要讓事情變的剪不斷理還亂 看來似乎只能叫計程車了 這時候她醒了過來 看到我在旁邊 又開始爆哭 支支吾吾的講了一些話 反正大概就是她喜歡一個學長然後學長也喜歡她然後她本來今天要跟學長告白的結果卻發現學長跟另一個學妹上床這種狗屎爛劇情 講完之後我都來不及插嘴 她開始賞我巴掌 啪！啪！啪！ 我大叫：「幹嘛打我啦？我又不是學長！」 她說：「我心情不好讓我打一下會死喔？」 我就說：「幹妳心情不好乾我屁事，我心情也不好啊！」 她就說：「那你也可以打回來啊！」 第一次看到她發酒瘋 到底是喝到什麼程度 我連忙哄她 但她不領情 一直瘋狂打我 接著 打了一個酒嗝 然後又是一個嗝 再一個嗝 我驚覺不妙 正要逃離時 下一秒 嘩啦嘩啦嘩啦嘩啦 她吐在我的外套上 她吐在我的外套上 她吐在我的外套上 我都還沒反應過來 接著又是 嘩啦嘩啦嘩啦 「幹你在衝三.... 嘩啦嘩啦嘩啦嘩啦 平息之後 她對我笑了一下 我以為已經結束了 嘩啦嘩啦嘩啦嘩啦 然後就又醉倒了 馬的我想走人了 
+                                        我對她大吼 「幹 你幹嘛吐在我身上？」 「嗯.......？$@！@%&@」 事實是 你根本無法跟喝醉酒的生物講話 那一瞬間真的很想把她載去夜店丟掉 但我還是捂著臉 捧著穢物外套 走到路邊叫酒後代駕 還特別說剛剛有嘔吐過 麻煩司機鋪上塑膠墊 後來計程車來了 半哄半騙 把她塞進車裡 她倒在我腿上 我把我的外套包好 裝進塑膠袋裡綁起來 這是一件我上個月剛買 我非常喜歡 6000多塊的EiDER外套 我看著這個女人 除了無奈還是無奈 八年的友誼 很想在今日就給它劃下句點 拿了衛生紙擦擦她嘴邊殘存的穢物 司機看了一眼，說 「少年欸，對女朋友不錯欸，現在這種男生不多了啦」 我苦笑了一下 呵呵 呵呵呵 呵呵呵呵 我也懶的解釋了 我看著窗外 夜風吹來涼涼的 天空是黑色的 我的心情卻是藍色的 藍的不能再藍 在校門口下車 揹著這隻豬走進學校 好不容易走到公寓門口 我滿身臭氣 實在不是很想去叫警衛來開門 但我又沒她室友的聯絡方式 於是聰明如我 把她放了下來 拿起她的手機 放到面前 用手把她的眼睛撐開 解鎖face id 
+                                        幹還真的被我解開了 傳賴給她室友 好險還沒有睡 簡單敘述一下 她室友下樓帶她上去 看著她室友一臉嫌惡的臉 我意識到我自己真的很臭 聞了一下 幹 真的很臭 上天是公平的 穢物也是公平的 因為全部都在我身上 正妹的身上是不能有任何臭味的 回到家收拾了一下 已經快四點了 想當然爾 八點行善銷過我自然沒去上 快中午時 電話又響了起來 「喂？幹嘛？」 「欸 老朋友！ 是我啦哈哈 昨天謝啦 我室友都跟我說了 是你送我回來的」 「嗯....」 「欸欸晚上再續攤啊，請你喝個酒答謝順便慶祝一下我擺脫渣男學長啊啊啊」 「........」 「幹嘛，不要喔？」 「你去吃屎吧」 然後我就掛斷電話了 繼續倒頭就睡 八年的友誼到此結束 不過大概絕交一個禮拜後 我們繼續了第九年的友情 一直到今天 那為什麼今天會突然有感而發呢 因為現在我在她的婚禮現場 放心 新郎不是我 這不是狄卡情節 不過剛剛新郎來跟我聊天 我們剛好聊到酒品問題 ：「是說我從來沒看過她喝酒欸，跟她相處兩年也不知道她酒品如何？」 我笑而不語 ：「你跟她從國中就認識了，那你知道嗎？」 不知道為什麼 我突然有種惡作劇的心情 我：「她酒品還行啦，酒量普通，不過喝醉也只會睡著而已，是說你們晚上可以去喝酒慶祝新婚啊！」 ：「哈哈好主意，我知道了」 說完 新郎開心的走了 我望著他的背影 心裡卻一點愧疚感也沒有 我淡淡的笑著 對不起新郎 倒霉鬼不能只有我一個 人在婚後一定會遇到許多問題 這是你要面對的第一個問題 早期發現 早期治療 俗話說 洞房花燭夜 人生四大樂事之一 不過今晚 我的心與新郎同在
+                                        R.I.P 新郎
+                                        =
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 21:32 (14 小時前)<br>
+                                        發布時間：2020年 03 月 14 日 19:32 (16 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+    
+                    <div class="lists-section">
+                        <div class="ts positive top attached message" id="status">
+                            已發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="checkmark icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        韓市長利用休息時間在車上小睡片刻，如此做牛做馬任勞任怨的偉人，還要面對不理性群眾的冷嘲熱諷、酸言酸語，這個社會怎麼了？<br>
+                                        =
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 20:32 (15 小時前)<br>
+                                        發布時間：2020年 03 月 14 日 19:32 (16 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+                    
+                    <div class="lists-section">
+                        <div class="ts positive top attached message" id="status">
+                            已發布
+                        </div>
+                        <div class="attached">
+                            <div class="ts structured message" id="message">
+                                <div class="icon">
+                                    <i class="checkmark icon"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="description">
+                                        人與人邂逅的引力就像是「重力」！<br>
+                                        為了相遇而相遇，更是無法擺脫的宿命！<br>
+                                        所以人類要體驗過未來的一切，才能到達這個世界！<br>
+                                        人與人何時相遇，何時別離…戰爭何時發生，時代何時變遷…自己會喜歡上誰？又會恨誰？自己何時會生小孩？小孩何時又會長大成人？誰會犯罪？誰又發明或創造了藝術？<br>
+                                        這些都不是用頭腦或肉體去記憶，而是用精神去體驗 過後所得到的認知！那就是「幸福」的真諦！不單單只有一人，而是全體人類都能對未來有所「覺悟」！<br>
+                                        「覺悟者恒幸福」！或許你會認為預知壞的未來會讓人感到「絕望」，其實剛好相反！<br>
+                                        即使知道明天會「死』，心中早有覺悟就不怕死！<br>
+                                        「覺悟」會吹走一切「絕望」！人類也會因此而改變！<br>
+                                        這正是我所追求的！人人都能籍由「通往天國的階梯」到達真幸福的境界！<br>
+                                        =                                
+                                    </div>
+                                    <div class="actions">
+                                        投稿時間：2020年 03 月 13 日 19:32 (16 小時前)<br>
+                                        發布時間：2020年 03 月 14 日 19:32 (16 小時前)
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>      
+                </div>
+            </div>
+
+            
+            <div class="ts basic horizontally fitted padded segment">
+                <div class="ts pagination menu">
+                    <a class="item">上一頁</a>
+                    <a class="item">1</a>
+                    <a class="item active">2</a>
+                    <a class="item">3</a>
+                    <span class="item">...</span>
+                    <a class="item">87</a>
+                    <a class="item">下一頁</a>
+                </div>
+            </div>
+
+		</div>
+        <div class="ts snackbar">
+            <div class="content"></div>
+            <a class="action"></a>
+        </div>
+        <footer>
+        	<center>
+        		<p>由三民高中 111級 <a target="_blank" href="https://me.imych.one/">黃猷珵</a> 開發設計<br />
+        	</center>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <title>客家三民 2.0 | 每日一客家，一年四季客好客滿，客家三民</title>
+      <!-- Tocas UI：CSS 與元件 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+      <link rel="stylesheet" href="/assets/style.css">
+      <!-- Tocas JS：模塊與 JavaScript 函式 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+
+
+    </head>
+    <body>
+        <div class="ts top fixed basic menu">
+            <div class="ts container">
+                <a class="item" href="/">客家三民</a>
+                <a class="item active" href="/submit.html">客家專區</a>
+                <a class="item" href="/lists.html">客訴管理</a>
+                <a class="item" href="/manage.html">客文審核</a>
+                <div class="right menu">
+                    <span class="item">您好，<img class="ts circular image" src="https://img.imych.one/me/images/YC.jpg?v=1.3.2" style="height:1em;margin:0 0.2em;"> 油成</span>
+                    <a class="item" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+		<header class="ts fluid padded heading slate" style="padding:70px;">
+			<div class="ts narrow container">
+				<h1 class="ts header">客家三民 2.0</h1>
+				<div class="ts huge sub header">
+				    維持網路秩序，你我有責。<br>
+				    每日一客家，一年四季客好客滿。
+				</div>
+			</div>
+		</header>
+		<div class="ts container container-index">
+			<div class="submit-section">
+				<h2>立即客家</h2>
+                <form id ="submit-post" class="ts form" action="/submit_result.html" method="POST" enctype="multipart/form-data">
+					<div id="body-field" class="required resizable field">
+						<label>客家內容</label>
+						<textarea minlength="5" id="body-area" name="contact" rows="6" placeholder="請在這輸入您的客家內容（至少5字）。"></textarea>
+					</div>
+					<style>
+					    #body-area, #captcha-input {
+                          border: 2px solid currentColor;
+                        }
+                        #body-area:invalid {
+                          border: 2px dashed red;
+                        }
+                        /*#body-area:invalid:focus {*/
+                        /*  background-image: linear-gradient(pink, lightgreen);*/
+                        /*}*/
+					</style>
+                    <div class="ts basic padded dashed slate clickable">
+                        <i class="upload symbol icon"></i>
+                        <span class="header">上傳圖片</span>
+                        <div class="large device only">
+                            <span class="description">將圖片拖拉至此處進行上傳。</span>
+                            <div class="ts horizontal divider">或</div>
+                        </div>
+                        <span class="description">點選框框選擇檔案</span>
+                        <input type="file" id="img" name="img" accept="image/png, image/jpeg, image/gif" class="ts fluid clickable slate">
+                    </div>
+					<div class="inline field">
+						<label>客文類型</label>
+						<div class="ts radio checkbox">
+                            <input id="comtext" type="radio" name="comtype" checked="checked">
+                            <label for="comtext">客文就好！</label>
+                        </div>
+                        <div class="ts radio checkbox">
+                            <input id="comimage" type="radio" name="comtype">
+                            <label for="comimage">客文字圖！</label>
+                        </div>
+					</div>
+					<div class="ts info message">
+                        <div class="header">發文叮嚀</div>
+                        <p>請先閱讀 Facebook 社群守則，就這樣 Have Fun!</p>
+                    </div>
+					<!-- <div id="captcha-field" class="required inline field">
+						<label>驗證問答</label>
+						<div class="two wide"><input id="captcha-input" name="captcha"></div>
+						<span>&nbsp; 請輸入「」（四個字）</span>
+					</div> -->
+				    <!-- <input name="csrf_token" id="csrf_token" type="hidden" value="sazM3Q2d" /> -->
+					<input onclick="OpenSnackbar()" id="submit" type="submit" class="ts fluid button" value="客下去！" />
+                </form>
+                <form id ="submit-post" class="ts form" action="/submit_success.html" method="POST" enctype="multipart/form-data">
+                    <div class="ts active dimmer">
+                        <div class="ts text loader">發文中</div>
+                    </div>
+					<div id="body-field" class="required resizable field">
+						<label>客家內容</label>
+						<textarea minlength="5" id="body-area" name="contact" rows="6" placeholder="請在這輸入您的客家內容（至少5字）。"></textarea>
+					</div>
+					<style>
+					    #body-area, #captcha-input {
+                          border: 2px solid currentColor;
+                        }
+                        #body-area:invalid {
+                          border: 2px dashed red;
+                        }
+                        /*#body-area:invalid:focus {*/
+                        /*  background-image: linear-gradient(pink, lightgreen);*/
+                        /*}*/
+					</style>
+					<div class="inline field">
+						<label>附加圖片</label>
+						<div class="four wide"><input type="file" id="img" name="img" accept="image/png, image/jpeg, image/gif" class="ts clickable basic dashed slate"></p></div>
+					</div>
+					<div class="inline field">
+						<label>客文類型</label>
+						<div class="ts radio checkbox">
+                            <input id="comtext" type="radio" name="comtype" checked="checked">
+                            <label for="comtext">客文就好！</label>
+                        </div>
+                        <div class="ts radio checkbox">
+                            <input id="comimage" type="radio" name="comtype">
+                            <label for="comimage">客文字圖！</label>
+                        </div>
+					</div>
+					<div class="ts info message">
+                        <div class="header">發文叮嚀</div>
+                        <p>請先閱讀 Facebook 社群守則，就這樣 Have Fun!</p>
+                    </div>
+                    <input onclick="OpenSnackbar()" id="submit" type="submit" class="ts button fluid" value="客下去！" />
+                </form>
+				<script>
+				    $('#submit').click(function() {
+                        // $(this).removeClass('myclass');
+                        $(this).addClass('.loading');
+                    });
+				</script>
+<!--<canvas id="myCanvas" width="500" height="300"-->
+<!--style="background:#000;">-->
+<!--Your browser does not support the canvas element.-->
+<!--</canvas>-->
+
+<!--<script>-->
+<!--var canvas = document.getElementById("myCanvas");-->
+<!--var ctx = canvas.getContext("2d");-->
+<!--ctx.font = "30px Arial";-->
+<!--ctx.fillStyle = '#FFFFFF';-->
+<!--</script>-->
+				<script>
+                    function OpenSnackbar() {
+                        ts('.snackbar').snackbar({
+                        content: '！',
+                        // action: '關閉',
+                        // actionEmphasis: 'negative',
+                        // onAction: () => {
+                        //     $(".snackbar").(hide)
+                        // }
+                        });
+                    }
+                </script>
+			</div>
+		</div>
+        <div class="ts snackbar">
+            <div class="content"></div>
+            <a class="action"></a>
+        </div>
+        <footer>
+        	<center>
+        		<p>由三民高中 111級 <a target="_blank" href="https://me.imych.one/">黃猷珵</a> 開發設計<br />
+        	</center>
+        </footer>
+    </body>
+</html>

@@ -9,3 +9,9 @@ footer {
     margin-top:8px;
     margin-bottom:8px;
 }
+.lists-section {
+	margin:9px 0;
+}
+.lists-section #message {
+	border-radius:0 0 5px 5px;
+}

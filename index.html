@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <title>客家三民 2.0 | 每日一客家，一年四季客好客滿，客家三民</title>
+      <!-- Tocas UI：CSS 與元件 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+      <link rel="stylesheet" href="/assets/style.css">
+      <!-- Tocas JS：模塊與 JavaScript 函式 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+
+
+    </head>
+    <body>
+        <div class="ts top fixed basic menu">
+            <div class="ts container">
+                <a class="item active" href="/">客家三民</a>
+                <div class="right menu">
+                    <a class="item" href="submit.html">Login</a>
+                </div>
+            </div>
+        </div>
+		<header class="ts fluid padded heading slate" style="padding:70px;">
+			<div class="ts narrow container">
+				<h1 class="ts header">客家三民 2.0</h1>
+				<div class="ts huge sub header">
+				    維持網路秩序，你我有責。<br>
+				    每日一客家，一年四季客好客滿。
+				</div>
+			</div>
+		</header>
+		<div class="ts container container-index">
+            <div class="ts positive segment">
+                <div class="ts big header">歡迎使用 客家三民 2.0</div>
+                <p>
+                    為維護網路善良風氣，我們要求您使用 Facebook 登入進行匿名發言
+                    ，不過請您放心，我們不會公開身分，即便是管理階層也無法查詢您的個資。
+                    <br>
+                    登入後您可查詢您的歷史發文、審核狀態。
+                </p>
+                <button class="ts ts primary big button" onclick="OpenSnackbar()">使用 Facebook 登入</button>
+                <script>
+                    function OpenSnackbar() {
+                        ts('.snackbar').snackbar({
+                        content: '戳右上角的 Login',
+                        });
+                    }
+                </script>
+            </div>
+            <div class="ts info segment">
+                <div class="ts stackable grid">
+                    <div class="eight wide column">
+                        <div class="ts big header">全站客文統計</div>
+                        <div class="ts positive statistic">
+                            <div class="value">301</div>
+                            <div class="label">認可通過</div>
+                        </div>
+                        <div class="ts warning statistic">
+                            <div class="value">85</div>
+                            <div class="label">審核中</div>
+                        </div>
+                        <div class="ts negative statistic">
+                            <div class="value">59</div>
+                            <div class="label">下架駁回</div>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="ts big header">今日客家統計</div>
+                        <div class="ts positive statistic">
+                            <div class="value">199</div>
+                            <div class="label">認可通過</div>
+                        </div>
+                        <div class="ts warning statistic">
+                            <div class="value">32</div>
+                            <div class="label">審核中</div>
+                        </div>
+                        <div class="ts negative statistic">
+                            <div class="value">6</div>
+                            <div class="label">下架駁回</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="ts snackbar">
+            <div class="content"></div>
+            <a class="action"></a>
+        </div>
+        <footer>
+        	<center>
+        		<p>由三民高中 111級 <a target="_blank" href="https://me.imych.one/">黃猷珵</a> 開發設計<br />
+        	</center>
+        </footer>
+    </body>
+</html>
